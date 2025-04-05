@@ -3,7 +3,12 @@ const app = new FirecrawlApp({ apiKey: "fc-33568b2257bc447997fb8c0dc7b4c7d3" });
 
 export default defineEventHandler(async (event) => {
   try {
-    const scrapeResult: any = await app.scrapeUrl("https://iina.io/", {
+    // 获取查询参数中的url
+    const query = getQuery(event)
+    const targetUrl = query.url as string
+
+
+    const scrapeResult: any = await app.scrapeUrl(targetUrl, {
       formats: ["markdown"],
     });
 
