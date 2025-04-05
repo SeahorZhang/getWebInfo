@@ -13,11 +13,14 @@ export default defineEventHandler(async (event) => {
     //   }
     // }
 
-    return {
-      success: true,
-      message: '操作成功',
-      data: body
-    }
+
+    return body
+
+    // return {
+    //   success: true,
+    //   message: '操作成功',
+    //   data: body
+    // }
 
   } catch (error: any) {
     return {
