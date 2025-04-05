@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@mendable/firecrawl-js": "^1.22.0",
     "metascraper": "^5.46.11",
     "metascraper-author": "^5.46.11",
     "metascraper-date": "^5.46.11",
