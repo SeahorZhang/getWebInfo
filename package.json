@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "metascraper": "^5.46.11",
+    "metascraper-author": "^5.46.11",
+    "metascraper-date": "^5.46.11",
+    "metascraper-description": "^5.46.11",
+    "metascraper-image": "^5.46.11",
+    "metascraper-logo": "^5.46.11",
+    "metascraper-publisher": "^5.46.11",
+    "metascraper-title": "^5.46.11",
+    "metascraper-url": "^5.46.11",
+    "nuxt": "^3.16.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
+}
