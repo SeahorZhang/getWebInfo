@@ -28,11 +28,14 @@ export default defineEventHandler(async (event) => {
       delete metadata[field]
     })
 
+    const markdown = scrapeResult.markdown
+    // 精简markdown文字和删除网址，删除图片，限制字数为1500
+    const content = markdown.replace(/https?:\/\/\S+/g, '').replace(/\n/g, ' ').replace(/\s+/g, ' ').replace(/!\[.*?\]\((.*?)\)/g, '').trim().slice(0, 1500)
 
     return {
       success: true,
       message: '获取网站信息成功',
-      data: { ...scrapeResult, metadata }
+      data: { content, metadata, }
     }
   } catch (error) {
     return {
