@@ -32,7 +32,7 @@ export default defineEventHandler(async (event) => {
     return {
       success: true,
       message: '获取网站信息成功',
-      data: metadata
+      data: { ...scrapeResult, metadata }
     }
   } catch (error) {
     return {
