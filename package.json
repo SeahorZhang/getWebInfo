@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@lark-base-open/node-sdk": "^1.0.1",
     "@mendable/firecrawl-js": "^1.22.0",
     "metascraper": "^5.46.11",
     "metascraper-author": "^5.46.11",
